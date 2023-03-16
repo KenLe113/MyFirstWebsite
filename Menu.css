@@ -1,0 +1,102 @@
+img {
+    display: block;
+    max-width: 200px;
+    max-height: 150px;
+}
+
+
+/* 
+.h1 {
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+    color: rebeccapurple;
+} */
+
+.h3 {
+    text-align: center;
+    color: green;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    padding: auto;
+}
+
+nav {
+    font-size: 25px;
+    color: green;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: rebeccapurple;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: green;
+    transition: all 0.3s ease;
+}
+
+
+/* body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+} */
+
+h1 {
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    font-style: italic;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, red, orange, green, yellow, blue, indigo, violet);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    animation: animation 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animation {
+    0% {
+        background-position: -400%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}

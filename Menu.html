@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="Menu.css">
+    <link rel="shortcut icon" href="images/Logo.i" type="image/vnd.microsoft.icon">
+    <script src="Menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="Menu.html" id="logo"><img src="images/Logo.jpg" alt="Logo of Website" width="234px" height="150px"></a>
+        <h1>Welcome To Our Fast Food Restaurant</h2>
+            <nav>
+                <a href="Home.html">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="Servise.html">Servise</a>
+                <a href="Voucher.html">Voucher</a>
+                <a href="Contact.html">Contact</a>
+                <a href="News.html">News</a>
+            </nav>
+    </header>
+    <main>
+        <!-- Hamburger -->
+        <div class="item">
+            <img src="images/Hamburger.png" alt="Hamburger" id="1">
+            <h3 class="h3">Hamburger 10$</h3>
+            <button onclick="addToCart({id: 1, name: 'Hamburger', price: 10})">Buy</button><br><br>
+        </div>
+
+        <!-- Pasta -->
+        <div class="item">
+            <img src="images/Pasta.jpeg" alt="Pasta" id="2">
+            <h3 class="h3">Pasta 15$</h3>
+            <button onclick="addToCart({id: 2, name: 'Pasta', price: 15})">Buy</button>
+        </div>
+
+        <!-- PotatoChips -->
+        <div class="item">
+            <img src="images/PotatoChips.jpeg" alt="PotatoChips" id="3">
+            <h3 class="h3">Potato Chips 8$</h3>
+            <button onclick="addToCart({id: 3, name: 'Potato Chips', price: 8})">Buy</button>
+        </div>
+
+        <!-- HotDog -->
+        <div class="item">
+            <img src="images/HotDog.jpg" alt="HotDog" id="4">
+            <h3 class="h3">Hot Dog 12$</h3>
+            <button onclick="addToCart({id: 4, name: 'Hot Dog', price: 12})">Buy</button>
+        </div>
+
+        <!-- Chicken -->
+        <div class="item">
+            <img src="images/Chicken.jpg" alt="Chicken" id="5">
+            <h3 class="h3">Chicken 20$</h3>
+            <button onclick="addToCart({id: 5, name: 'Chicken', price: 20})">Buy</button>
+        </div>
+
+        <!-- MilkTea -->
+        <div class="item">
+            <img src="images/MilkTea.jpeg" alt="MilkTea" id="6">
+            <h3 class="h3">Milk Tea 11$</h3>
+            <button onclick="addToCart({id: 6, name: 'Milk Tea', price: 11})">Buy</button>
+        </div>
+
+        <!-- Coffee -->
+        <div class="item">
+            <img src="images/Coffee.jpeg" alt="Coffee" id="7">
+            <h3 class="h3">Coffee 12$</h3>
+            <button onclick="addToCart({id: 7, name: 'Coffee', price: 12})">Buy</button>
+        </div>
+
+        <!-- CocaCola -->
+        <div class="item">
+            <img src="images/Coca.jpg" alt="CocaCola" id="8">
+            <h3 class="h3">Coca Cola 14$</h3>
+            <button onclick="addToCart({id: 8, name: 'Coca Cola', price: 14})">Buy</button>
+        </div>
+
+        <!-- Sting -->
+        <div class="item">
+            <img src="images/Sting.jpg" alt="Sting" id="9">
+            <h3 class="h3">Sting 10$</h3>
+            <button onclick="addToCart({id: 9, name: 'Sting', price: 10})">Buy</button>
+        </div>
+
+        <!-- PeachIcedTea -->
+        <div class="item">
+            <img src="images/PeachIcedTea.jpg" alt="PeachIcedTea" id="10">
+            <h3 class="h3">Peach Iced Tea 14$</h3>
+            <button onclick="addToCart({id: 10, name: 'Peach Iced Tea', price: 14})">Buy</button>
+        </div>
+        <!-- <nav>
+            <h1 class="h1" style="text-align: left;">My Products</h1>
+            <h3>Shopping Cart</h3>
+            <div id="cart"></div>
+            <button onclick="showCart()"></button>">Your Bill</button>
+            <button onclick="calculateTotal()">Calculate Total</button>
+            <button> <h3 id="total"></h3>
+            <button onclick="placeOrder()">Place an Order</button>
+        </nav> -->
+    </main>
+    <!-- <footer></footer> -->
+</body>
+
+</html>
