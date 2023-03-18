@@ -1,7 +1,7 @@
 img {
     display: block;
-    max-width: 200px;
-    max-height: 150px;
+    max-width: 250px;
+    max-height: 200px;
 }
 
 
@@ -46,9 +46,10 @@ nav a:hover {
     transition: all 0.3s ease;
 }
 
-button {
-    background-color: orange;
-    color: black;
+
+/* button {
+    background-color: greenyellow;
+    color: red;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -56,8 +57,9 @@ button {
     font-size: medium;
     font-weight: bold;
     margin-top: 10px;
-    width: 200px;
-}
+    width: 250px;
+    height: 40px;
+} */
 
 button:hover {
     background-color: #fff;
@@ -85,7 +87,7 @@ h1 {
     letter-spacing: 4px;
     overflow: hidden;
     background: linear-gradient(90deg, red, orange, green, yellow, blue, indigo, violet);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: 85%;
     animation: animation 5s linear infinite;
     -webkit-background-clip: text;
@@ -93,6 +95,41 @@ h1 {
 }
 
 @keyframes animation {
+    0% {
+        background-position: -400%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+button {
+    background-color: greenyellow;
+    color: red;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 250px;
+    height: 40px;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    font-style: italic;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, red, green);
+    /* background-repeat: no-repeat; */
+    background-size: 85%;
+    animation: animation 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animationBuy {
     0% {
         background-position: -400%;
     }
